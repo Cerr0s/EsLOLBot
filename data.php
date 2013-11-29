@@ -28,8 +28,8 @@
 	$config = array(
     	'consumer_key' => 'JYzdejAC5OMWFDu6XdFwfg',
     	'consumer_secret' => 'hFdxXwoEf6oAKIFc7AbS11Bk5KHGYY2s9oK3RL96s',
-    	'oauth_token' => '12009862-cSUUgH9NHHCgbjCN3a7HEKWV1s9LpTpBYtERiE2zH',
-    	'oauth_token_secret' => 'w4wVLlL5A0ztiweIo0cpNtFvjidYpzgn1XXDX0DjABh6v',
+    	'oauth_token' => 'aquivaeltoken',
+    	'oauth_token_secret' => 'aquivaelsecret',
     	'output_format' => 'object'
 	);
  
