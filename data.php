@@ -24,10 +24,6 @@
 	echo "Su nivel es: ".$AccountID;
 
 	/* Ahora Tweeteamos la Informacion */
-	$consumerKey    = 'JYzdejAC5OMWFDu6XdFwfg';
-	$consumerSecret = 'hFdxXwoEf6oAKIFc7AbS11Bk5KHGYY2s9oK3RL96s';
-	$oAuthToken     = '12009862-cSUUgH9NHHCgbjCN3a7HEKWV1s9LpTpBYtERiE2zH';
-	$oAuthSecret    = 'w4wVLlL5A0ztiweIo0cpNtFvjidYpzgn1XXDX0DjABh6v';
 
 	$config = array(
     	'consumer_key' => 'JYzdejAC5OMWFDu6XdFwfg',
@@ -37,15 +33,12 @@
     	'output_format' => 'object'
 	);
  
-	// incluimos la librería para usar la API OAuth
 	include ("TwitterOAuth.php");
 	include ("Exception/TwitterException.php");
 
 	use TwitterOAuth\TwitterOAuth;
  
 	$tweet = new TwitterOAuth($config);
- 
-	# aqui tu lógica para recoger el contenido del tweet, ya sea de tu bbdd, feed, rss o fichero
  
 	$tweet->post('statuses/update', array('status' => 'El Usuario Es: '.$Username.' y su nivel es: '.$Level.''));
 
